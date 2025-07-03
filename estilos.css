@@ -1,0 +1,89 @@
+.banner{
+    position: center;
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+#banner_animado {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    height: 100%;
+    animation: banner-animado 10s infinite running;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/La-Laguna-Colorada-Waman-Adventures-2.jpg);
+    animation-delay: 0s;
+    animation-fill-mode: backwards;
+}
+
+.col{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+form{
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    background-color: white;
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    animation: texto-animado 5s infinite running;
+    padding: 20px;
+    font-family: "Bitcount Grid Double", system-ui;
+}
+.container-fluid{
+    display: grid;
+    grid-auto-columns: minmax(1fr);
+    padding-bottom: 40px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to left, rgb(231, 212, 231), rgb(2, 82, 102))
+}
+footer{
+    background-color: rgb(39, 39, 39);
+    color: gray;
+}
+
+@keyframes banner-animado {
+    0% {
+        background-image: url(img/Banner1.jpg);
+    }
+    33%{
+        background-image: url(img/Banner2.jpeg);
+    }
+    66%{
+        background-image: url(img/Banner3.jpg);
+    }
+    100%{
+        background-image: url(img/Banner1.jpg);
+    }
+}
+@keyframes texto-animado {
+    0% {
+        color: rgb(3, 114, 12);
+
+    }
+    50% {
+        color: rgb(0, 0, 0);
+
+    }
+    100% {
+        color: rgb(3, 114, 12);
+
+    }
+}
